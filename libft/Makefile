@@ -20,7 +20,10 @@ SRC		= ft_itoa.c	ft_putstr_fd.c	ft_strmapi.c \
 			ft_printf/ft_flags.c	  ft_printf/ft_print_ptr_pct.c	 ft_printf/utils_2.c \
 			ft_printf/ft_printf.c	  ft_printf/ft_print_str_char.c  ft_printf/utils_3.c \
 			ft_printf/ft_print_hex.c  ft_printf/ft_print_uint.c	 ft_printf/utils_4.c \
-			ft_printf/ft_print_int.c  ft_printf/utils_1.c
+			ft_printf/ft_print_int.c  ft_printf/utils_1.c \
+			get_next_line/get_next_char.c	     get_next_line/get_next_line_multi.c \
+			get_next_line/get_next_char_utils.c  get_next_line/get_next_line_utils1.c \
+			get_next_line/get_next_line.c	     get_next_line/get_next_line_utils2.c
 OBJ		= $(SRC:.c=.o)
 RM		= rm -f
 

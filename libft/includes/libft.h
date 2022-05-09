@@ -6,7 +6,7 @@
 /*   By: amahla <amahla@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 12:37:51 by amahla            #+#    #+#             */
-/*   Updated: 2022/05/03 12:01:58 by amahla           ###   ########.fr       */
+/*   Updated: 2022/05/09 12:24:34 by amahla           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include "ft_printf.h"
 
 typedef struct s_list
 {
