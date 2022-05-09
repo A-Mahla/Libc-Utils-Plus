@@ -2,6 +2,7 @@ NAME	= libft.a
 CC		= gcc
 AR		= ar rcs
 CFLAGS	= -Wall -Werror -Wextra
+INC		= -I includes
 SRC		= ft_itoa.c	ft_putstr_fd.c	ft_strmapi.c \
 			ft_atoi.c	ft_memchr.c	ft_split.c	ft_strncmp.c \
 			ft_bzero.c	ft_memcmp.c	ft_strchr.c	ft_strnstr.c \
@@ -15,7 +16,11 @@ SRC		= ft_itoa.c	ft_putstr_fd.c	ft_strmapi.c \
 			ft_lstadd_front.c	ft_lstmap.c \
 			ft_lstclear.c	ft_lstnew.c \
 			ft_lstdelone.c	ft_lstsize.c \
-			ft_lstiter.c
+			ft_lstiter.c \
+			ft_printf/ft_flags.c	  ft_printf/ft_print_ptr_pct.c	 ft_printf/utils_2.c \
+			ft_printf/ft_printf.c	  ft_printf/ft_print_str_char.c  ft_printf/utils_3.c \
+			ft_printf/ft_print_hex.c  ft_printf/ft_print_uint.c	 ft_printf/utils_4.c \
+			ft_printf/ft_print_int.c  ft_printf/utils_1.c
 OBJ		= $(SRC:.c=.o)
 RM		= rm -f
 
@@ -25,7 +30,7 @@ $(NAME) : $(OBJ)
 	$(AR) $@ $^
 
 .c.o	:
-	$(CC) $(CFLAGS) -o $@ -c $<
+	$(CC) $(CFLAGS) $(INC) -o $@ -c $<
 
 .PHONY	: all clean fclean re
 
