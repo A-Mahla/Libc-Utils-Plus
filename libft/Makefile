@@ -6,6 +6,7 @@ INC		= -I includes
 SRC		= ft_itoa.c	ft_putstr_fd.c	ft_strmapi.c \
 			ft_atoi.c	ft_memchr.c	ft_split.c	ft_strncmp.c \
 			ft_bzero.c	ft_memcmp.c	ft_strchr.c	ft_strnstr.c \
+			ft_strcat.c ft_strcmp.c ft_strncat.c ft_strstr.c \
 			ft_calloc.c	ft_memcpy.c	ft_strdup.c	ft_strrchr.c \
 			ft_isalnum.c	ft_memmove.c	ft_striteri.c	ft_strtrim.c \
 			ft_isalpha.c	ft_memset.c	ft_strjoin.c	ft_substr.c \
