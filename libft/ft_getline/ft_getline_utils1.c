@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils1.c                             :+:      :+:    :+:   */
+/*   ft_getline_utils1.c                             :+:       :+: :+: :+:    */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amahla <amahla@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 12:55:24 by amahla            #+#    #+#             */
-/*   Updated: 2022/05/09 13:48:42 by amahla           ###   ########.fr       */
+/*   Updated: 2023/06/24 01:44:52 by ammah ###       ########     ########    */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"get_next_line.h"
+#include"ft_getline.h"
 
 char	*ft_str_to_save(char *save)
 {
@@ -24,13 +24,13 @@ char	*ft_str_to_save(char *save)
 		i++;
 	if (*(save + i) == '\n')
 		i++;
-	temp = calloc_gnl(ft_strlen_gnl(save + i) + 1, sizeof(char));
+	temp = calloc_gl(ft_strlen_gl(save + i) + 1, sizeof(char));
 	if (!temp)
 		return (NULL);
 	while (*(save + i))
 		*(temp + j++) = *(save + i++);
 	free(save);
-	if (!ft_strlen_gnl(temp))
+	if (!ft_strlen_gl(temp))
 	{
 		free(temp);
 		temp = NULL;
@@ -52,14 +52,14 @@ char	*ft_str_to_print(char *save)
 		size++;
 	if (*(save + size) == '\n')
 		size++;
-	line = calloc_gnl(size + 1, sizeof(char));
+	line = calloc_gl(size + 1, sizeof(char));
 	if (!line)
 		return (NULL);
 	while (*(save + i) && *(save + i) != '\n')
 		*(line + j++) = *(save + i++);
 	if (*(save + i) == '\n')
 		*(line + j) = *(save + i);
-	if (!ft_strlen_gnl(line))
+	if (!ft_strlen_gl(line))
 	{
 		free(line);
 		return (NULL);
@@ -76,7 +76,7 @@ char	*ft_str_temp(char *save, int fd)
 	buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!buffer)
 		return (NULL);
-	while (buffer && rd > 0 && !ft_strchr_nl(save))
+	while (buffer && rd > 0 && !ft_strchr_gl(save))
 	{
 		rd = read(fd, buffer, BUFFER_SIZE);
 		if (rd == -1)
@@ -85,7 +85,7 @@ char	*ft_str_temp(char *save, int fd)
 			return (NULL);
 		}
 		buffer[rd] = '\0';
-		save = ft_strjoin_gnl(save, buffer);
+		save = ft_strjoin_gl(save, buffer);
 	}
 	if (buffer)
 		free(buffer);
