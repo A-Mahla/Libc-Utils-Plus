@@ -26,11 +26,11 @@ To run the command, open your terminal and follow these steps:
       ```
 
 ## Functions
-### Printf
+### ft_Printf :
 
    - [ft_printf](libft/ft_printf/ft_printf.c#L112) - ```int	ft_printf(const char *format, ...)```
 
-      flags:
+      Types conversions :
         -  [%c](libft/ft_printf/ft_print_str_char.c#L22) print a single character.
         -  [%s](libft/ft_printf/ft_print_str_char.c#L76) print a string of characters.
         -  [%p](libft/ft_printf/ft_print_ptr_pct.c#L44) The void * pointer argument is printed in hexadecimal
@@ -40,3 +40,12 @@ To run the command, open your terminal and follow these steps:
         -  [%x](libft/ft_printf/ft_print_hex.c#L67) print a number in lowercase hexadecimal (base 16).
         -  [%X](libft/ft_printf/ft_print_hex.c#L67) print a number in uppercase hexadecimal (base 16).
         -  [%%](libft/ft_printf/ft_print_ptr_pct.c#L68) print a percent sign.
+
+      flag directives (use them between '%' character and the type conversion):
+        - ['-'](https://learn.microsoft.com/en-us/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170#flags) left align the result within the given field width.
+        - ['+'](https://learn.microsoft.com/en-us/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170#flags) use a sign (+ or -) to prefix the output value if it's of a signed type.
+        - ['#'](https://learn.microsoft.com/en-us/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170#flags) When it's used with the o, x, or X format, the # flag uses 0, 0x, or 0X, respectively.
+        - ['0'](https://learn.microsoft.com/en-us/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170#flags) If width is prefixed by 0, leading zeros are added until the minimum width is reached.
+        - [blank (' ')](https://learn.microsoft.com/en-us/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170#flags) use a blank to prefix the output value if it's signed and positive.
+        - ['.'](https://learn.microsoft.com/en-us/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170#precision) the precision specification
+        - ['\<number\>'](https://learn.microsoft.com/en-us/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170#width) the width specification field.
