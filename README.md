@@ -28,7 +28,7 @@ To run the command, open your terminal and follow these steps:
 ## Functions
 ### Printf
 
-   - [ft_printf](libft/ft_printf/ft_printf.c) - ```int	ft_printf(const char *format, ...)```
+   - [ft_printf](libft/ft_printf/ft_printf.c[122]) - ```int	ft_printf(const char *format, ...)```
 
       flags:
         -  %c print a single character.
