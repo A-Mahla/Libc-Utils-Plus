@@ -31,11 +31,12 @@ To run the command, open your terminal and follow these steps:
    - [ft_printf](libft/ft_printf/ft_printf.c#L112) - ```int	ft_printf(const char *format, ...)```
 
       flags:
-        -  %c print a single character.
-        -  %s print a string of characters.
-        -  %p The void * pointer argument is printed in hexadecimal
-        -  %d print a decimal (base 10) number.
-        -  %i print an integer in base 10.
-        -  %u print an unsigned decimal (base 10) number.
-        -  %x print a number in hexadecimal (base 16).
-        -  %% print a percent sign.
+        -  [%c](libft/ft_printf/ft_print_str_char.c#L22) print a single character.
+        -  [%s](libft/ft_printf/ft_print_str_char.c#L76) print a string of characters.
+        -  [%p](libft/ft_printf/ft_print_prt_pct.c#L44) The void * pointer argument is printed in hexadecimal
+        -  [%d](libft/ft_printf/ft_print_int.c#L70) print a decimal (base 10) number.
+        -  [%i](libft/ft_printf/ft_print_int.c#L70) print an integer in base 10.
+        -  [%u](libft/ft_printf/ft_print_uint.c#L70) print an unsigned decimal (base 10) number.
+        -  [%x](libft/ft_printf/ft_print_hex.c#L67) print a number in lowercase hexadecimal (base 16).
+        -  [%X](libft/ft_printf/ft_print_hex.c#L67) print a number in uppercase hexadecimal (base 16).
+        -  [%%](libft/ft_printf/ft_print_prt_pct.c#L68) print a percent sign.
