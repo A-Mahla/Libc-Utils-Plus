@@ -36,7 +36,7 @@ To run the command, open your terminal and follow these steps:
         -  [%p](libft/ft_printf/ft_print_prt_pct.c#L44) The void * pointer argument is printed in hexadecimal
         -  [%d](libft/ft_printf/ft_print_int.c#L70) print a decimal (base 10) number.
         -  [%i](libft/ft_printf/ft_print_int.c#L70) print an integer in base 10.
-        -  [%u](libft/ft_printf/ft_print_uint.c#L70) print an unsigned decimal (base 10) number.
+        -  [%u](libft/ft_printf/ft_print_uint.c#L41) print an unsigned decimal (base 10) number.
         -  [%x](libft/ft_printf/ft_print_hex.c#L67) print a number in lowercase hexadecimal (base 16).
         -  [%X](libft/ft_printf/ft_print_hex.c#L67) print a number in uppercase hexadecimal (base 16).
         -  [%%](libft/ft_printf/ft_print_prt_pct.c#L68) print a percent sign.
