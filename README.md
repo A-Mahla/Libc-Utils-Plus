@@ -24,3 +24,18 @@ To run the command, open your terminal and follow these steps:
       (cd /path/to/project/directory && make)
       gcc -o a.out *.o -I </path/to/project/directory>/libft/includes -L /path/to/project/directory -lft
       ```
+
+## Functions
+### Printf
+
+   - [ft_printf](src/ft_printf/ft_printf.c) - ```int	ft_printf(const char *format, ...)```
+
+      flags:
+        -  %c print a single character.
+        -  %s print a string of characters.
+        -  %p The void * pointer argument is printed in hexadecimal
+        -  %d print a decimal (base 10) number.
+        -  %i print an integer in base 10.
+        -  %u print an unsigned decimal (base 10) number.
+        -  %x print a number in hexadecimal (base 16).
+        -  %% print a percent sign.
