@@ -18,7 +18,7 @@ To run the command, open your terminal and follow these steps:
       (cd /path/to/project/directory && make)
       ```
 
-- To compile with ```libft.a```:
+   - To compile with ```libft.a```:
   
       ```shell
       (cd /path/to/project/directory && make)
