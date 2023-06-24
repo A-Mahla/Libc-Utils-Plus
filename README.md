@@ -22,5 +22,5 @@ To run the command, open your terminal and follow these steps:
   
       ```shell
       (cd /path/to/project/directory && make)
-      gcc -o a.out *.o -I </path/to/project/directory>/libft/include -L /path/to/project/directory -lft
+      gcc -o a.out *.o -I </path/to/project/directory>/libft/includes -L /path/to/project/directory -lft
       ```
