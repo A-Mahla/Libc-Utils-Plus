@@ -93,7 +93,6 @@ To run the command, open your terminal and follow these steps:
 * [`ft_memcmp`](libft/ft_memcmp.c)		- compare byte string.
 * [`ft_memmove`](libft/ft_memmove.c)	- copy byte string.
 * [`ft_memcpy`](libft/ft_memcpy.c)		- copy memory area.
-* [`ft_memccpy`](libft/ft_memccpy.c)	- copy string until character found.
 
 #### Functions from `<string.h>` library
 
