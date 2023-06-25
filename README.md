@@ -85,7 +85,7 @@ To run the command, open your terminal and follow these steps:
 * [`ft_atoi`](libft/ft_atoi.c)		- convert ASCII string to integer.
 * [`ft_calloc`](libft/ft_calloc.c)	- memory allocation.
 
-#### Functions from `<strings.h>` library
+#### Functions from `<string.h>` library
 
 * [`ft_bzero`](libft/ft_bzero.c)		- write zeroes to a byte string.
 * [`ft_memset`](libft/ft_memset.c)		- write a byte to a byte string.
@@ -93,9 +93,6 @@ To run the command, open your terminal and follow these steps:
 * [`ft_memcmp`](libft/ft_memcmp.c)		- compare byte string.
 * [`ft_memmove`](libft/ft_memmove.c)	- copy byte string.
 * [`ft_memcpy`](libft/ft_memcpy.c)		- copy memory area.
-
-#### Functions from `<string.h>` library
-
 * [`ft_strlen`](libft/ft_strlen.c)				- find length of string.
 * [`ft_strchr`](libft/ft_strchr.c)				- locate character in string (first occurrence).
 * [`ft_strrchr`](libft/ft_strrchr.c)			- locate character in string (last occurence).
