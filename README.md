@@ -27,13 +27,13 @@ To run the command, open your terminal and follow these steps:
 
 ## Functions
 
-### ft_printf :
+### Ft_printf :
 
    ```C
    # include "ft_printf.h"
    ```
 
-   - [ft_printf](libft/ft_printf/ft_printf.c#L112) - ```int	ft_printf(const char *format, ...);```
+   - [`ft_printf`](libft/ft_printf/ft_printf.c#L112) - ```int	ft_printf(const char *format, ...);```
 
       Types conversions :
         -  [`%c`](libft/ft_printf/ft_print_str_char.c#L22) print a single character.
@@ -56,13 +56,13 @@ To run the command, open your terminal and follow these steps:
         - [`\<number\>`](https://learn.microsoft.com/en-us/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170#width) the width specification field.
 
    
-### ft_getline :
+### Ft_getline :
 
    ```C
    # include "ft_getline.h"
    ```
 
-   - [ft_getline](libft/ft_getline/ft_getline.c#L15) - ```char	*ft_getline(int fd);```
+   - [`ft_getline`](libft/ft_getline/ft_getline.c#L15) - ```char	*ft_getline(int fd);```
 
 ### Others Functions :
 
