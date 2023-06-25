@@ -109,7 +109,6 @@ To run the command, open your terminal and follow these steps:
 
 #### Non-standard functions
 
-* [`ft_putchar`](libftft_putchar.c) *	- output a character to stdout.
 * [`ft_putchar_fd`](libft/ft_putchar_fd.c)		- output a character to given file.
 * [`ft_putstr_fd`](libft/ft_putstr_fd.c)		- output string to given file.
 * [`ft_putendl_fd`](libft/ft_putendl_fd.c)		- output string to given file with newline.
