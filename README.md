@@ -66,6 +66,10 @@ To run the command, open your terminal and follow these steps:
 
 ### Others Functions :
 
+```C
+# include "ft_libft.h"
+```
+
 #### Functions from `<ctype.h>` library
 
 * [`ft_isascii`](libft/ft_isascii.c)			- test for ASCII character.
