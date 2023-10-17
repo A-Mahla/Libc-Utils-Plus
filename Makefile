@@ -72,7 +72,7 @@ RM		:= rm -rf
 
 all		: $(NAME)
 
-$(OUTDIR)/%o	: $(LIBSRC)/%c 
+$(OUTDIR)/%.o	: $(LIBSRC)/%.c 
 	$(CC) $(CFLAGS) $(INC) -o $@ -c $<
 
 $(NAME) : 	$(OUTDIR) $(addprefix $(OUTDIR)/, $(OBJ))
@@ -93,4 +93,4 @@ fclean	: clean
 re		: fclean
 	make all
 
--include	$(addprefix $(OUTDIR)/,$(SRS:.c=.d)))
+-include	$(addprefix $(OUTDIR)/,$(SRC:.c=.d)))
