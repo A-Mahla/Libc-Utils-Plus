@@ -3,6 +3,7 @@ NAME	:= 	libft.a
 CC		:= 	gcc
 AR		:= 	ar rcs
 CFLAGS	:= 	-Wall -Werror -Wextra
+DFLAGS	:=	-MMD -MP
 LIBSRC 	:= 	libft
 INC		:= 	-I $(addprefix 	$(LIBSRC)/, includes)
 OUTDIR 	:= 	obj
@@ -73,7 +74,7 @@ RM		:= rm -rf
 all		: $(NAME)
 
 $(OUTDIR)/%.o	: $(LIBSRC)/%.c 
-	$(CC) $(CFLAGS) $(INC) -o $@ -c $<
+	$(CC) $(DFLAGS) $(CFLAGS) $(INC) -o $@ -c $<
 
 $(NAME) : 	$(OUTDIR) $(addprefix $(OUTDIR)/, $(OBJ))
 	$(AR) $@ $(addprefix $(OUTDIR)/, $(OBJ))
