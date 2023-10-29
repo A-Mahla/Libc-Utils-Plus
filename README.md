@@ -38,6 +38,7 @@ To run the command, open your terminal and follow these steps:
    ```
 
    - [`ft_printf`](libft/ft_printf/ft_printf.c#L112) - ```int	ft_printf(const char *format, ...);```
+   - [`ft_printf`](libft/ft_printf/ft_fprintf.c#L112) - ```int	ft_printf(const char *format, ...);```
 
       Types conversions :
         -  [`%c`](libft/ft_printf/ft_print_str_char.c#L22) print a single character.
