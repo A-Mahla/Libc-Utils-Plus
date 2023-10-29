@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_fprintf.c                                    :+:       :+: :+: :+:    */
+/*   ft_dprintf.c                                    :+:       :+: :+: :+:    */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amahla <amahla@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 12:59:27 by amahla            #+#    #+#             */
-/*   Updated: 2023/10/29 22:35:14 by amahla ###       ########     ########   */
+/*   Updated: 2023/10/29 22:41:46 by amahla ###       ########     ########   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ void	fprocess(int fd, va_list ap, char *str, int *count)
 	}
 }
 
-int	ft_fprintf(int fd, const char *format, ...)
+int	ft_dprintf(int fd, const char *format, ...)
 {
 	va_list	ap;
 	int		count;

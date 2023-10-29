@@ -6,7 +6,7 @@
 /*   By: amahla <amahla@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 13:01:30 by amahla            #+#    #+#             */
-/*   Updated: 2023/10/29 22:39:15 by amahla ###       ########     ########   */
+/*   Updated: 2023/10/29 22:42:00 by amahla ###       ########     ########   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ void	init_flag(t_flag *fg);
 void	process_format(char *str, t_flag *fg, int i);
 int		ft_printf(const char *format, ...);
 
-//		ft_fprintf.c
-int	ft_fprintf(int fd, const char *format, ...);
+//		ft_dprintf.c
+int		ft_dprintf(int fd, const char *format, ...);
 
 //		ft_print_str_char.c
 char	*ft_printf_char(t_flag *fg, char c, int	*len);
